@@ -1,0 +1,25 @@
+LINEAR SEARCH ALL OCCURRENCES
+
+INPUT: Array A[n], Integer T (target number)
+OUTPUT: Indices dimana T muncul, frekuensi T, atau pesan "Not found"
+
+BEGIN
+    count = 0
+    indices[n]
+
+    FOR i = 0 TO n-1 DO
+        IF A[i] = T THEN
+            indices[count] = i
+            count = count + 1
+        ENDIF
+    ENDFOR
+
+    IF count > 0 THEN
+        DISPLAY "Angka ", T, " ditemukan sebanyak ", count, " kali pada indeks: "
+        FOR j = 0 TO count DO
+            DISPLAY indices[j]
+        ENDFOR
+    ELSE
+        DISPLAY "Angka ", T, " tidak ditemukan dalam array."
+    ENDIF
+END
